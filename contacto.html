@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicaciones</title>
+    <link rel="stylesheet" href="CSS/style2.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagenes/baner.jpg" width="100%" height="400px" alt="Banner">
+    </header>
+    <nav>
+        <ul>
+
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="renta.html">Renta de casas</a></li>
+            <li><a href="nosotros.html">Quiénes Somos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+
+        </ul>
+    </nav>
+    <section>
+        <h2>Contactanos</h2>
+        <form action="enviar.php" method="POST">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono"><br><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+        </form>
+    </section>
+
+    <div class="wrap">
+        <div class="wrap-text">
+            <p>¿Tienes preguntas, comentarios o sugerencias? ¡Nos encantaría saber de ti! Completa el formulario de
+                contacto a continuación y nos pondremos en contacto contigo lo antes posible. También puedes comunicarte
+                con nosotros a través de nuestras redes sociales o correo electrónico. Estamos aquí para ayudarte y
+                brindarte la mejor experiencia posible. ¡Esperamos saber de ti pronto!</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <p>Teléfono: +1 123 456 789</p>
+            <p>Correo electrónico: info@bienesraices.com</p>
+            <p>Dirección: Calle Principal #123, Ciudad, País</p>
+        </div>
+
+        <div class="derechos-autor">
+            <p>&copy; 2024 Bienes Raíces. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

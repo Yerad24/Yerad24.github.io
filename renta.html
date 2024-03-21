@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raíces Y</title>
+    <link rel="stylesheet" href="css/style4.css">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <img src="imagenes/baner.jpg" width="100%" height="400px" alt="Banner">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="renta.html">Renta de casas</a></li>
+                <li><a href="nosotros.html">Quiénes Somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="wrap">
+            <div class="wrap-text">
+                <h1> Renta de Casas </h1>
+                <div class="property-gallery">
+                    <div class="property-item">
+                        <img src="imagenes/cas1.jpg" alt="Casa 1">
+                        <p>Descripción de la casa 1.</p>
+                        <p>Precio: $XXX,XXX</p>
+                        <button class="btn-comprar"
+                            onclick="openPopup('imagenes/cas1.jpg', 'Descripción de la casa 1', '$XXX,XXX')">Rentar</button>
+                    </div>
+                    <div class="property-item">
+                        <img src="imagenes/cas2.jpg" alt="Casa 2">
+                        <p>Descripción de la casa 2.</p>
+                        <p>Precio: $XXX,XXX</p>
+                        <button class="btn-comprar"
+                            onclick="openPopup('imagenes/cas2.jpg', 'Descripción de la casa 2', '$XXX,XXX')">Rentar</button>
+                    </div>
+                    <div class="property-item">
+                        <img src="imagenes/cas3.jpg" alt="Casa 3">
+                        <p>Descripción de la casa 3.</p>
+                        <p>Precio: $XXX,XXX</p>
+                        <button class="btn-comprar"
+                            onclick="openPopup('imagenes/cas3.jpg', 'Descripción de la casa 3', '$XXX,XXX')">Rentar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="wrap">
+            <div class="wrap-text">
+                <h1> Ventas </h1>
+                <div class="property-gallery">
+                    <div class="property-item">
+                        <img src="imagenes/cas4.jpg" alt="Casa 4">
+                        <p>Descripción de la casa 4.</p>
+                        <p>Precio: $XXX,XXX</p>
+                        <button class="btn-comprar"
+                            onclick="openPopup('imagenes/cas4.jpg', 'Descripción de la casa 4', '$XXX,XXX')">Comprar</button>
+                    </div>
+                    <div class="property-item">
+                        <img src="imagenes/cas5.jpg" alt="Casa 5">
+                        <p>Descripción de la casa 5.</p>
+                        <p>Precio: $XXX,XXX</p>
+                        <button class="btn-comprar"
+                            onclick="openPopup('imagenes/cas5.jpg', 'Descripción de la casa 5', '$XXX,XXX')">Comprar</button>
+                    </div>
+                    <div class="property-item">
+                        <img src="imagenes/cas6.jpg" alt="Casa 6">
+                        <p>Descripción de la casa 6.</p>
+                        <p>Precio: $XXX,XXX</p>
+                        <button class="btn-comprar"
+                            onclick="openPopup('imagenes/cas6.jpg', 'Descripción de la casa 6', '$XXX,XXX')">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <p>Teléfono: +1 123 456 789</p>
+            <p>Correo electrónico: info@bienesraicesxyz.com</p>
+            <p>Dirección: Calle Principal #123, Ciudad, País</p>
+        </div>
+
+        <div class="derechos-autor">
+            <p>&copy; 2024 Bienes Raíces Y. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <img id="popup-image" src="" alt="Casa">
+            <p id="popup-description"></p>
+            <p id="popup-price"></p>
+            <button class="btn-cancelar" onclick="closePopup()">Cancelar</button>
+            <button class="btn-seguir-comprando">Seguir Comprando</button>
+        </div>
+    </div>
+
+    <script>
+        function openPopup(imageSrc, description, price) {
+            document.getElementById("popup-image").src = imageSrc;
+            document.getElementById("popup-description").innerText = description;
+            document.getElementById("popup-price").innerText = price;
+            document.getElementById("popup").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
